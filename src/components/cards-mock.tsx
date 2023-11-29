@@ -19,6 +19,6 @@ export const cardsMock = [
   {
     icon: <FaRegQuestionCircle size={45} color="#F78320" />,
     text: 'Suporte',
-    description: `Com treinos variados e personal trainers dedicados, oferecemos tudo para sua melhor forma. Conte com orientação especializada em cada passo do seu percurso fitness. Vamos juntos alcançar seus objetivos!`,
+    description: `Com treinos variados e personal trainers dedicados, oferecemos tudo para sua melhor forma. Conte com orientação especializada!`,
   },
 ];

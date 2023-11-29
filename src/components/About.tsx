@@ -9,8 +9,8 @@ import Image from 'next/image';
 const About = () => {
   return (
     <section className="max-h-screen flex flex-col bg-paper-texture">
-      <div className="h-full max-w-[1440px] mx-auto">
-        <div className="flex gap-16">
+      <div className="h-full max-w-[1100px] mx-auto">
+        <div className="flex justify-between">
           {cardsMock.map(card => (
             <Cards
               key={card.text}
@@ -21,7 +21,7 @@ const About = () => {
           ))}
         </div>
 
-        <div className="flex justify-between items-center -mb-[70px]">
+        <div className="flex justify-between items-center -mb-[45px]">
           <div className="max-w-[700px]">
             <GreatTitle title="Sobre Nós" />
             <h1 className="font-extrabold w-[80%] tracking-[-0.08em] text-5xl my-3 uppercase">
