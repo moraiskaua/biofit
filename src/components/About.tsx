@@ -3,7 +3,7 @@ import { cardsMock } from './cards-mock';
 
 const About = () => {
   return (
-    <section className="min-h-screen flex gap-16 justify-center">
+    <section className="min-h-screen flex gap-16 justify-center bg-paper-texture">
       {cardsMock.map(card => (
         <Cards
           key={card.text}

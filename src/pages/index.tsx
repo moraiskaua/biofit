@@ -6,6 +6,7 @@ const Home = () => {
     <main className="min-h-screen bg-page-color">
       <Introduction />
       <About />
+      <section className="min-h-screen"></section>
     </main>
   );
 };

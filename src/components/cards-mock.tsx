@@ -4,7 +4,7 @@ import { FaRegQuestionCircle } from 'react-icons/fa';
 
 export const cardsMock = [
   {
-    icon: <FaRegClock size={35} color="#F78320" />,
+    icon: <FaRegClock size={45} color="#F78320" />,
     text: 'Progresso',
     description: `Nossa equipe de especialistas trabalhará
     com você para criar um plano personalizado
@@ -12,12 +12,12 @@ export const cardsMock = [
     passo a passo.`,
   },
   {
-    icon: <FaRegCheckCircle size={35} color="#F78320" />,
+    icon: <FaRegCheckCircle size={45} color="#F78320" />,
     text: 'Resultados',
     description: `Com uma variedade de treinos para escolher, você terá tudo o que precisa para entrar na melhor forma da sua vida.`,
   },
   {
-    icon: <FaRegQuestionCircle size={35} color="#F78320" />,
+    icon: <FaRegQuestionCircle size={45} color="#F78320" />,
     text: 'Suporte',
     description: `Com treinos variados e personal trainers dedicados, oferecemos tudo para sua melhor forma. Conte com orientação especializada em cada passo do seu percurso fitness. Vamos juntos alcançar seus objetivos!`,
   },
