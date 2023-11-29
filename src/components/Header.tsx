@@ -25,13 +25,13 @@ const Header = ({ isScrolled }: HeaderProps) => {
           <li>Sobre Nós</li>
         </Link>
         <Link
-          href="#about"
+          href="#categories"
           className="opacity-70 hover:opacity-100 transition-all hover:scale-105 duration-300 easy-in-out"
         >
           <li>Turmas</li>
         </Link>
         <Link
-          href="#about"
+          href="#calculator"
           className="opacity-70 hover:opacity-100 transition-all hover:scale-105 duration-300 easy-in-out"
         >
           <li>Calculadora</li>

@@ -7,7 +7,7 @@ import { FaInstagram } from 'react-icons/fa';
 const Introduction = () => {
   return (
     <section
-      className="h-screen m-auto flex flex-col justify-center items-center bg-header-cover bg-cover relative shadow-2xl"
+      className="h-screen m-auto flex flex-col justify-center items-center bg-header-cover bg-cover bg-center relative shadow-2xl"
       id="home"
     >
       <div className="flex justify-start pl-24 items-center w-full">

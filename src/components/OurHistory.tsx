@@ -31,7 +31,7 @@ const OurHistory = () => {
           <div className="flex justify-center items-center flex-col w-[50%] bg-white">
             <Image src={montainIcon} alt="Target icon" width={80} />
             <h2 className="font-extrabold text-2xl my-4">Nossa História</h2>
-            <p className="text-center w-[70%]">
+            <p className="text-center w-[70%]" id="categories">
               Com equipamentos conquistados e muita dedicação, a academia
               tornou-se um local onde a comunidade se reúne para se desafiar e
               celebrar conquistas. Surpreendemos nossos alunos com resultados

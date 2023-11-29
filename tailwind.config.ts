@@ -17,9 +17,10 @@ const config: Config = {
         'cover-title': 'url("/assets/images/cover-title.png")',
       },
       colors: {
-        'page-color': '#F8F8F8',
         orange: '#F78320',
+        'page-color': '#F8F8F8',
         'dark-gray': '#161514',
+        'light-gray': '#B3B3B3',
       },
     },
   },
