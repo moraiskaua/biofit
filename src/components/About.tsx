@@ -1,5 +1,5 @@
 import Cards from '@/components/Cards';
-import { cardsMock } from './cards-mock';
+import { cardsMock } from './mocks/cards-mock';
 import GreatTitle from './GreatTitle';
 import GreatButton from './GreatButton';
 import { FaArrowRightLong as Arrow } from 'react-icons/fa6';
@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <section className="max-h-screen flex flex-col bg-paper-texture">
+    <section className="max-h-screen flex flex-col bg-paper-texture" id="about">
       <div className="h-full max-w-[1100px] mx-auto">
         <div className="flex justify-between">
           {cardsMock.map(card => (
