@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section className="max-h-screen flex flex-col bg-paper-texture">
       <div className="h-full max-w-[1440px] mx-auto">
-        <div className="flex gap-36">
+        <div className="flex gap-16">
           {cardsMock.map(card => (
             <Cards
               key={card.text}
@@ -21,13 +21,13 @@ const About = () => {
           ))}
         </div>
 
-        <div className="flex justify-between items-center -mb-[120px]">
-          <div className="max-w-[550px]">
+        <div className="flex justify-between items-center -mb-[70px]">
+          <div className="max-w-[700px]">
             <GreatTitle title="Sobre Nós" />
-            <h1 className="font-bold text-6xl mb-2">
+            <h1 className="font-extrabold w-[80%] tracking-[-0.08em] text-5xl my-3 uppercase">
               Te daremos força, saúde e resultados!
             </h1>
-            <p>
+            <p className="w-[70%]">
               Na Biofit, estamos dedicados a transformar seu sonho de um corpo
               incrível em realidade! Nossos treinadores especializados vão criar
               um plano personalizado de fitness para superar suas metas.
@@ -40,7 +40,7 @@ const About = () => {
             </GreatButton>
           </div>
           <div>
-            <Image src={ginasta} alt="Ginasta" />
+            <Image src={ginasta} alt="Ginasta" width={430} />
           </div>
         </div>
       </div>
