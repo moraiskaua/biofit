@@ -14,6 +14,7 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'header-cover': 'url("/assets/images/header-cover.png")',
         'paper-texture': 'url("/assets/images/paper-texture.png")',
+        'cover-title': 'url("/assets/images/cover-title.png")',
       },
       colors: {
         'page-color': '#F8F8F8',
