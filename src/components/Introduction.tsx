@@ -26,7 +26,7 @@ const Introduction = () => {
         <FaFacebook size={28} className="rotate-90" />
       </div>
 
-      <GreatButton isReserveButton={false}>
+      <GreatButton href="#categories" isReserveButton={false}>
         Nossas turmas <Arrow />
       </GreatButton>
     </section>

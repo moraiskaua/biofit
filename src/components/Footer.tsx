@@ -18,18 +18,27 @@ const Footer = () => {
           condicionamento físico.
         </p>
         <div className="flex gap-5 py-4">
-          <FaFacebook
-            size={28}
-            className="hover:scale-110 cursor-pointer transition-all"
-          />
-          <FaInstagram
-            size={28}
-            className="hover:scale-110 cursor-pointer transition-all"
-          />
-          <FaYoutube
-            size={28}
-            className="hover:scale-110 cursor-pointer transition-all"
-          />
+          <Link href="https://www.facebook.com/biofitqnj" target="_blank">
+            <FaFacebook
+              size={28}
+              className="hover:scale-110 cursor-pointer transition-all"
+            />
+          </Link>
+          <Link href="https://www.instagram.com/biofitqnj/" target="_blank">
+            <FaInstagram
+              size={28}
+              className="hover:scale-110 cursor-pointer transition-all"
+            />
+          </Link>
+          <Link
+            href="https://www.youtube.com/@fitbrothersoficial6096"
+            target="_blank"
+          >
+            <FaYoutube
+              size={28}
+              className="hover:scale-110 cursor-pointer transition-all"
+            />
+          </Link>
         </div>
         <div className="flex flex-col">
           <span>Todos os direitos reservados. | © 2023 Biofit</span>
@@ -60,7 +69,7 @@ const Footer = () => {
         <h4 className="uppercase text-white relative before:content-[''] before:absolute before:border-b-orange before:border-b-4 before:w-20 before:left-0 before:-bottom-1 font-bold">
           Nossas Turmas
         </h4>
-        <nav className="flex flex-col mt-9 gap-2">
+        <nav className="flex flex-col mt-9 gap-2 w-[20%]">
           <Link
             href="#categories"
             className="hover:text-white transition-colors"
@@ -105,17 +114,33 @@ const Footer = () => {
           </Link>
         </nav>
       </div>
-      <div>
-        <h4 className="uppercase text-white relative before:content-[''] before:absolute before:border-b-orange before:border-b-4 before:w-32 before:left-0 before:-bottom-1 font-bold mb-9">
-          Horário de Funcionamento
-        </h4>
-        <h6 className="uppercase text-white font-bold">SEGUNDA A SEXTA:</h6>
-        <span>06:00 - 23:00</span>
-        <h6 className="uppercase text-white font-bold mt-3.5">SÁBADO:</h6>
-        <span>08:00 - 13:00</span>
-        <h6 className="uppercase text-white font-bold mt-3.5">
-          DOMINGO - FECHADO
-        </h6>
+      <div className="flex flex-col gap-9">
+        <div>
+          <h4 className="uppercase text-white relative before:content-[''] before:absolute before:border-b-orange before:border-b-4 before:w-32 before:left-0 before:-bottom-1 font-bold mb-9">
+            Horário de Funcionamento
+          </h4>
+          <h6 className="uppercase text-white font-bold">SEGUNDA A SEXTA:</h6>
+          <span>06:00 - 23:00</span>
+          <h6 className="uppercase text-white font-bold mt-1.5">SÁBADO:</h6>
+          <span>08:00 - 13:00</span>
+          <h6 className="uppercase text-white font-bold mt-1.5">
+            DOMINGO - FECHADO
+          </h6>
+        </div>
+        <div>
+          <h4 className="uppercase text-white relative before:content-[''] before:absolute before:border-b-orange before:border-b-4 before:w-32 before:left-0 before:-bottom-1 font-bold mb-4">
+            Localização
+          </h4>
+          <span>St. J Norte QNJ 52 - Taguatinga, Brasília - DF, 72140-520</span>
+          <button
+            onClick={() =>
+              window.open('https://maps.app.goo.gl/48H1biufF629U9aB6', '_blank')
+            }
+            className="border mt-2 py-2 px-4 border-white/50 hover:scale-105 transition-all duration-700"
+          >
+            Ver localização
+          </button>
+        </div>
       </div>
     </footer>
   );

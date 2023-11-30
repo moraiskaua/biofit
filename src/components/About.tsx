@@ -35,7 +35,7 @@ const About = () => {
               extraordinários!
             </p>
 
-            <GreatButton isReserveButton>
+            <GreatButton href="#" isReserveButton>
               Agende sua aula experimental <Arrow />
             </GreatButton>
           </div>

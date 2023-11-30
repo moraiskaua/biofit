@@ -50,7 +50,7 @@ const Modal = ({ onClose, category }: ModalProps) => {
               {category.description}
             </p>
             <div className="mb-6 mx-auto">
-              <GreatButton isReserveButton>
+              <GreatButton href="#" onClick={onClose} isReserveButton>
                 Agende sua aula experimental <Arrow />
               </GreatButton>
             </div>
