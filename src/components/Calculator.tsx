@@ -46,9 +46,14 @@ const Calculator = () => {
 
   return (
     <section className="flex bg-paper-texture" id="calculator">
-      <div className="w-[1100px] h-[500px] flex justify-between items-center mx-auto">
-        <Image src={modeloImc} alt="Modelo IMC" width={540} />
-        <div className="w-full">
+      <div className="w-[1100px] h-[577px] flex justify-between items-end mx-auto">
+        <Image
+          src={modeloImc}
+          alt="Modelo IMC"
+          width={540}
+          className="-mb-[45px]"
+        />
+        <div className="h-full w-full flex flex-col justify-center">
           <GreatTitle title="Calculadora" />
           <h1 className="font-extrabold tracking-[-0.08em] text-5xl my-3 uppercase">
             VAMOS MEDIR SEU ÍNDICE <br /> DE{' '}

@@ -27,7 +27,7 @@ const Categories = () => {
   };
 
   return (
-    <section className="min-h-screen">
+    <section className="mb-11">
       <div className="w-[1100px] bg-white mx-auto mt-24 flex flex-col items-center p-8 shadow-2xl">
         <GreatTitle title="Nossas turmas" />
         <h1 className="font-extrabold tracking-[-0.08em] text-5xl my-5 uppercase">

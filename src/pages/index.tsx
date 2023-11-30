@@ -1,6 +1,8 @@
 import About from '@/components/About';
 import Calculator from '@/components/Calculator';
 import Categories from '@/components/Categories';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 import Introduction from '@/components/Introduction';
 import OurHistory from '@/components/OurHistory';
 
@@ -12,6 +14,8 @@ const Home = () => {
       <OurHistory />
       <Categories />
       <Calculator />
+      <Contact />
+      <Footer />
     </main>
   );
 };

@@ -8,7 +8,7 @@ interface HeaderProps {
 
 const Header = ({ isScrolled }: HeaderProps) => {
   return (
-    <header
+    <nav
       className={`${
         isScrolled ? 'bg-dark-gray' : 'bg-transparent'
       } flex items-center justify-between fixed w-full px-16 z-20 transition-all duration-500 easy-in`}
@@ -37,13 +37,13 @@ const Header = ({ isScrolled }: HeaderProps) => {
           <li>Calculadora</li>
         </Link>
         <Link
-          href="#about"
+          href="#contact"
           className="opacity-70 hover:opacity-100 transition-all hover:scale-105 duration-300 easy-in-out"
         >
           <li>Contato</li>
         </Link>
       </ul>
-    </header>
+    </nav>
   );
 };
 

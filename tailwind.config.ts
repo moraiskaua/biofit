@@ -15,6 +15,7 @@ const config: Config = {
         'header-cover': 'url("/assets/images/header-cover.png")',
         'paper-texture': 'url("/assets/images/paper-texture.png")',
         'cover-title': 'url("/assets/images/cover-title.png")',
+        'form-ad': 'url("/assets/images/form-ad.png")',
       },
       colors: {
         orange: '#F78320',
