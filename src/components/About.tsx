@@ -35,7 +35,15 @@ const About = () => {
               extraordinários!
             </p>
 
-            <GreatButton href="#" isReserveButton>
+            <GreatButton
+              onClick={() =>
+                window.open(
+                  `https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}`,
+                  '_blank',
+                )
+              }
+              reserve
+            >
               Agende sua aula experimental <Arrow />
             </GreatButton>
           </div>

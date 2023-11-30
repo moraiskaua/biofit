@@ -10,6 +10,7 @@ export interface CategoryProps {
   subtitle: string;
   description: string;
   image: string;
+  message: string;
 }
 
 const Categories = () => {

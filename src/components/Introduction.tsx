@@ -1,5 +1,5 @@
 import GreatButton from '@/components/GreatButton';
-import { FaArrowRightLong as Arrow } from 'react-icons/fa6';
+import { FaArrowRightLong as Arrow, FaWhatsapp } from 'react-icons/fa6';
 import { FaFacebook } from 'react-icons/fa6';
 import { FaYoutube } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
@@ -21,12 +21,43 @@ const Introduction = () => {
 
       <div className="flex flex-row-reverse items-center gap-x-4 absolute text-white -rotate-90 -right-8 font-bold">
         CONECTE-SE
-        <FaInstagram size={28} className="rotate-90" />
-        <FaYoutube size={28} className="rotate-90" />
-        <FaFacebook size={28} className="rotate-90" />
+        <FaInstagram
+          size={28}
+          className="rotate-90 hover:scale-125 cursor-pointer transition-all"
+          onClick={() =>
+            window.open('https://www.instagram.com/biofitqnj/', '_blank')
+          }
+        />
+        <FaYoutube
+          size={28}
+          className="rotate-90 hover:scale-125 cursor-pointer transition-all"
+          onClick={() =>
+            window.open(
+              'https://www.youtube.com/@fitbrothersoficial6096',
+              '_blank',
+            )
+          }
+        />
+        <FaFacebook
+          size={28}
+          className="rotate-90 hover:scale-125 cursor-pointer transition-all"
+          onClick={() =>
+            window.open('https://www.facebook.com/biofitqnj', '_blank')
+          }
+        />
+        <FaWhatsapp
+          size={28}
+          className="rotate-90 hover:scale-125 cursor-pointer transition-all"
+          onClick={() =>
+            window.open(
+              `https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}`,
+              '_blank',
+            )
+          }
+        />
       </div>
 
-      <GreatButton href="#categories" isReserveButton={false}>
+      <GreatButton href="#categories">
         Nossas turmas <Arrow />
       </GreatButton>
     </section>

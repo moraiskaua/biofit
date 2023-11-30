@@ -2,6 +2,11 @@ import { MdOutlineEmail, MdPhone } from 'react-icons/md';
 import { AiOutlineUser } from 'react-icons/ai';
 import { HiPencil } from 'react-icons/hi2';
 import { FormEvent, useState } from 'react';
+import Link from 'next/link';
+import { FaFacebook } from 'react-icons/fa6';
+import { FaYoutube } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -72,7 +77,44 @@ const Contact = () => {
             Enviar
           </button>
         </div>
-        <div className="w-1/2 bg-form-ad bg-cover bg-center" />
+        <div className="w-1/2 bg-form-ad bg-cover bg-center flex justify-center items-end">
+          <div className="flex gap-5 py-4 text-white mb-5">
+            <FaWhatsapp
+              size={40}
+              className="hover:scale-110 cursor-pointer transition-all"
+              onClick={() =>
+                window.open(
+                  `https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}`,
+                  '_blank',
+                )
+              }
+            />
+            <FaFacebook
+              size={40}
+              className="hover:scale-110 cursor-pointer transition-all"
+              onClick={() =>
+                window.open('https://www.facebook.com/biofitqnj', '_blank')
+              }
+            />
+            <FaInstagram
+              size={40}
+              className="hover:scale-110 cursor-pointer transition-all"
+              onClick={() =>
+                window.open('https://www.instagram.com/biofitqnj/', '_blank')
+              }
+            />
+            <FaYoutube
+              size={40}
+              className="hover:scale-110 cursor-pointer transition-all"
+              onClick={() =>
+                window.open(
+                  'https://www.youtube.com/@fitbrothersoficial6096',
+                  '_blank',
+                )
+              }
+            />
+          </div>
+        </div>
       </form>
     </section>
   );

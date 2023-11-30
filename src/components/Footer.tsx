@@ -1,5 +1,5 @@
 import logo from '../../public/assets/images/logo-biofit.png';
-import { FaFacebook } from 'react-icons/fa6';
+import { FaFacebook, FaWhatsapp } from 'react-icons/fa6';
 import { FaYoutube } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import Image from 'next/image';
@@ -18,27 +18,40 @@ const Footer = () => {
           condicionamento físico.
         </p>
         <div className="flex gap-5 py-4">
-          <Link href="https://www.facebook.com/biofitqnj" target="_blank">
-            <FaFacebook
-              size={28}
-              className="hover:scale-110 cursor-pointer transition-all"
-            />
-          </Link>
-          <Link href="https://www.instagram.com/biofitqnj/" target="_blank">
-            <FaInstagram
-              size={28}
-              className="hover:scale-110 cursor-pointer transition-all"
-            />
-          </Link>
-          <Link
-            href="https://www.youtube.com/@fitbrothersoficial6096"
-            target="_blank"
-          >
-            <FaYoutube
-              size={28}
-              className="hover:scale-110 cursor-pointer transition-all"
-            />
-          </Link>
+          <FaWhatsapp
+            size={28}
+            className="hover:scale-110 cursor-pointer transition-all"
+            onClick={() =>
+              window.open(
+                `https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}`,
+                '_blank',
+              )
+            }
+          />
+          <FaFacebook
+            size={28}
+            className="hover:scale-110 cursor-pointer transition-all"
+            onClick={() =>
+              window.open('https://www.facebook.com/biofitqnj', '_blank')
+            }
+          />
+          <FaInstagram
+            size={28}
+            className="hover:scale-110 cursor-pointer transition-all"
+            onClick={() =>
+              window.open('https://www.instagram.com/biofitqnj/', '_blank')
+            }
+          />
+          <FaYoutube
+            size={28}
+            className="hover:scale-110 cursor-pointer transition-all"
+            onClick={() =>
+              window.open(
+                'https://www.youtube.com/@fitbrothersoficial6096',
+                '_blank',
+              )
+            }
+          />
         </div>
         <div className="flex flex-col">
           <span>Todos os direitos reservados. | © 2023 Biofit</span>
@@ -136,7 +149,7 @@ const Footer = () => {
             onClick={() =>
               window.open('https://maps.app.goo.gl/48H1biufF629U9aB6', '_blank')
             }
-            className="border mt-2 py-2 px-4 border-white/50 hover:scale-105 transition-all duration-700"
+            className="ml-4 border mt-2 py-2 px-4 border-white/50 hover:scale-105 transition-all duration-700"
           >
             Ver localização
           </button>

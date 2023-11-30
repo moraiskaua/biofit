@@ -74,7 +74,7 @@ const Calculator = () => {
                   placeholder="Peso / Kg"
                   value={weight}
                   onChange={e => setWeight(e.target.value)}
-                  min={1}
+                  min={10}
                 />
                 <div className="p-2 bg-light-gray font-bold border border-black border-t-0">
                   Seu IMC é: <span className="font-normal">{imc}</span>
@@ -87,7 +87,7 @@ const Calculator = () => {
                   placeholder="Altura / Cm"
                   value={height}
                   onChange={e => setHeight(e.target.value)}
-                  min={1}
+                  min={55}
                 />
                 <div className="p-2 bg-light-gray font-bold border border-black border-t-0">
                   Resultado: <span className="font-normal">{result}</span>

@@ -9,6 +9,14 @@ interface ModalProps {
 }
 
 const Modal = ({ onClose, category }: ModalProps) => {
+  const handleClickButton = () => {
+    window.open(
+      `https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}?text=${category.message}`,
+      '_blank',
+    );
+    onClose();
+  };
+
   return (
     <div
       className="fixed inset-0 z-20 overflow-y-auto bg-black bg-opacity-75"
@@ -38,7 +46,6 @@ const Modal = ({ onClose, category }: ModalProps) => {
               {category.hour}
             </h2>
           </div>
-
           <div className="flex flex-col mx-auto py-4 w-[80%]">
             <h1 className="font-bold text-4xl tracking-[-0.05em] mt-3 uppercase text-left">
               {category.title}
@@ -50,7 +57,7 @@ const Modal = ({ onClose, category }: ModalProps) => {
               {category.description}
             </p>
             <div className="mb-6 mx-auto">
-              <GreatButton href="#" onClick={onClose} isReserveButton>
+              <GreatButton onClick={handleClickButton} reserve>
                 Agende sua aula experimental <Arrow />
               </GreatButton>
             </div>
