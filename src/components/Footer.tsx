@@ -7,12 +7,12 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="w-full mt-12 bg-dark-gray grid grid-cols-3 content-center text-white/50 p-12 ">
-      <div>
+    <footer className="w-full mt-12 bg-dark-gray grid md:grid-cols-3 content-center text-white/50 p-12">
+      <div className="flex flex-col justify-center items-center text-center mb-5 md:block md:m-0">
         <Link href="#home">
           <Image src={logo} width={180} alt="Logo" />
         </Link>
-        <p className="font-light max-w-[60%] text-justify">
+        <p className="font-light md:max-w-[60%] text-justify">
           Eleve sua saúde e corpo para o próximo nível com nosso programa
           abrangente projetado para ajudá-lo a alcançar seus objetivos de
           condicionamento físico.
@@ -53,7 +53,7 @@ const Footer = () => {
             }
           />
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col md:block md:text-left">
           <span>Todos os direitos reservados. | © 2023 Biofit</span>
           <span>
             Desenvolvido por{' '}
@@ -78,7 +78,7 @@ const Footer = () => {
           </span>
         </div>
       </div>
-      <div>
+      <div className="mb-7 md:mb-0 flex flex-col items-center text-center md:items-start md:text-left">
         <h4 className="uppercase text-white relative before:content-[''] before:absolute before:border-b-orange before:border-b-4 before:w-20 before:left-0 before:-bottom-1 font-bold">
           Nossas Turmas
         </h4>
@@ -127,7 +127,7 @@ const Footer = () => {
           </Link>
         </nav>
       </div>
-      <div className="flex flex-col gap-9">
+      <div className="flex flex-col gap-9 items-center text-center md:items-start md:text-left md:mb-0">
         <div>
           <h4 className="uppercase text-white relative before:content-[''] before:absolute before:border-b-orange before:border-b-4 before:w-32 before:left-0 before:-bottom-1 font-bold mb-9">
             Horário de Funcionamento
@@ -140,7 +140,7 @@ const Footer = () => {
             DOMINGO - FECHADO
           </h6>
         </div>
-        <div>
+        <div className="flex flex-col text-left">
           <h4 className="uppercase text-white relative before:content-[''] before:absolute before:border-b-orange before:border-b-4 before:w-32 before:left-0 before:-bottom-1 font-bold mb-4">
             Localização
           </h4>
