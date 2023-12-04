@@ -37,7 +37,7 @@ const Categories = () => {
         <div className="grid md:grid-cols-3 md:grid-rows-2 gap-6 my-5">
           {categoriesMock.map(category => (
             <div
-              className="flex flex-col items-center relative cursor-pointer overflow-hidden"
+              className="flex flex-col items-center relative cursor-pointer overflow-hidden rounded-lg shadow-md"
               onClick={() => handleOpenModal(category)}
               key={category.name}
             >

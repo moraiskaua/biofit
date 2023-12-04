@@ -46,20 +46,20 @@ const Calculator = () => {
 
   return (
     <section className="flex bg-paper-texture" id="calculator">
-      <div className="w-[1100px] h-[577px] flex justify-between items-end mx-auto">
+      <div className="w-full max-w-[1100px] h-[577px] flex flex-col-reverse md:flex-row md:justify-between md:items-end md:mx-auto">
         <Image
           src={modeloImc}
           alt="Modelo IMC"
           width={540}
           className="-mb-[45px]"
         />
-        <div className="h-full w-full flex flex-col justify-center">
+        <div className="h-full w-full flex flex-col justify-center items-center md:items-start">
           <GreatTitle title="Calculadora" />
-          <h1 className="font-extrabold tracking-[-0.08em] text-5xl my-3 uppercase">
+          <h1 className="font-extrabold tracking-[-0.08em] text-3xl md:text-5xl my-2 md:my-3 uppercase">
             VAMOS MEDIR SEU ÍNDICE <br /> DE{' '}
             <span className="text-orange">MASSA CORPORAL</span>
           </h1>
-          <p className="w-[80%] mb-3">
+          <p className="text-sm md:text-base w-[80%] mb-3">
             O IMC, ou Índice de Massa Corporal, relaciona peso e altura.
             Calculado como peso dividido pela altura ao quadrado, categoriza em
             faixas como abaixo do peso, peso normal, sobrepeso e obesidade.
@@ -95,7 +95,7 @@ const Calculator = () => {
               </div>
             </div>
             <button
-              className="w-full py-3 border border-black bg-orange mt-3 text-white"
+              className="w-full py-3 border border-black bg-orange my-4 text-white"
               type="submit"
             >
               Calcular
