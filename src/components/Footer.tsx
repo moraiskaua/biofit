@@ -53,7 +53,7 @@ const Footer = () => {
             }
           />
         </div>
-        <div className="flex flex-col md:block md:text-left">
+        <div className="flex flex-col md:flex md:text-left">
           <span>Todos os direitos reservados. | © 2023 Biofit</span>
           <span>
             Desenvolvido por{' '}
