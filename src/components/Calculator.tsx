@@ -98,7 +98,7 @@ const Calculator = () => {
               </div>
             </div>
             <button
-              className="w-[94.5%] md:w-[92.6%] mx-auto md:mx-0 mt-8 py-3 border border-black bg-orange my-4 text-white"
+              className="w-[93.5%] md:w-full mx-auto md:mx-0 mt-8 py-3 border border-black bg-orange my-4 text-white"
               type="submit"
             >
               Calcular
