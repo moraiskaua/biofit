@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Hamburger from 'hamburger-react';
 import logo from '../../public/assets/images/logo-biofit.png';
+import { useMediaQuery } from 'react-responsive';
 
 interface HeaderProps {
   isScrolled: boolean;
@@ -10,14 +11,28 @@ interface HeaderProps {
 
 const HeaderMobile = ({ isScrolled }: HeaderProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const handleToggleIsOpen = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <nav
-      className={`${
+      className={`${isMobile ? 'flex' : 'hidden'} ${
         isScrolled ? 'bg-dark-gray' : 'bg-transparent'
       } flex items-center justify-between w-full fixed px-4 sm:px-8 lg:px-16 z-20 transition-all duration-500 ease-in`}
     >

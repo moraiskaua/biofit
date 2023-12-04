@@ -51,9 +51,9 @@ const Calculator = () => {
           src={modeloImc}
           alt="Modelo IMC"
           width={370}
-          className="-mb-[40px] mx-auto w-[80%] md:mx-0 md:-mb-[50px] md:w-[80%]"
+          className="-mb-[40px] mx-auto w-[80%] md:mx-0 md:-mb-[50px] md:w-[75%]"
         />
-        <div className="h-full w-full flex flex-col justify-center items-center md:items-start -mb-24 md:-mb-12">
+        <div className="h-full w-full flex flex-col justify-center items-center md:items-start -mb-24 md:-mb-12 overflow-x-hidden">
           <GreatTitle title="Calculadora" />
           <h1 className="font-extrabold tracking-[-0.08em] text-3xl md:text-5xl my-2 md:my-3 uppercase">
             VAMOS MEDIR SEU ÍNDICE <br /> DE{' '}
@@ -66,10 +66,10 @@ const Calculator = () => {
           </p>
 
           <form
-            className="flex flex-col w-full justify-center"
+            className="flex flex-col w-full justify-center items-center"
             onSubmit={handleCalculateIMC}
           >
-            <div className="flex gap-4 md:w-[92.5%] justify-center">
+            <div className="flex gap-4 md:gap-0.5 w-full justify-center">
               <div className="flex flex-col w-[45%] md:w-full">
                 <input
                   className="p-2 border border-black outline-none"

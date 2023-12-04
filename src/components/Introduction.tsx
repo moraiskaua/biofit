@@ -26,7 +26,7 @@ const Introduction = () => {
       </div>
 
       {/* Mobile */}
-      <div className="flex lg:hidden gap-x-4 absolute text-white bottom-36">
+      <div className="flex lg:hidden gap-x-4 absolute text-white bottom-16">
         <FaInstagram
           size={28}
           className="hover:scale-125 cursor-pointer transition-all"

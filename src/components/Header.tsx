@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../../public/assets/images/logo-biofit.png';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 interface HeaderProps {
   isScrolled: boolean;
@@ -9,6 +10,7 @@ interface HeaderProps {
 
 const Header = ({ isScrolled }: HeaderProps) => {
   const [active, setActive] = useState('');
+  const [isNotMobile, setIsNotMobile] = useState(false);
 
   const handleScroll = () => {
     const sections = ['home', 'about', 'categories', 'calculator', 'contact'];
@@ -30,14 +32,27 @@ const Header = ({ isScrolled }: HeaderProps) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsNotMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <nav
-      className={`${
-        isScrolled ? 'bg-dark-gray' : 'bg-transparent'
+      className={`${isScrolled ? 'bg-dark-gray' : 'bg-transparent'} ${
+        !isNotMobile ? 'flex' : 'hidden'
       } flex items-center justify-between fixed w-full px-16 z-20 transition-all duration-500 easy-in`}
     >
       <Link href="#home" onClick={() => setActive('')}>
-        <Image src={logo} width={180} height={120} alt="Logo" className="" />
+        <Image src={logo} width={180} height={120} alt="Logo" />
       </Link>
 
       <ul className="flex gap-10 mr-10 text-white border-b-2 border-b-transparent">

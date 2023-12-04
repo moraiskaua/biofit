@@ -22,9 +22,8 @@ const About = () => {
             loop
           >
             {cardsMock.map(card => (
-              <SwiperSlide>
+              <SwiperSlide key={card.text}>
                 <Cards
-                  key={card.text}
                   icon={card.icon}
                   text={card.text}
                   description={card.description}
