@@ -22,7 +22,7 @@ const Modal = ({ onClose, category }: ModalProps) => {
       className="fixed inset-0 z-20 overflow-y-auto overflow-x-hidden bg-black bg-opacity-75"
       onClick={onClose}
     >
-      <div className="flex items-center justify-center min-h-screen p-3.5 md:p-0">
+      <div className="flex items-center justify-center min-h-screen p-3.5 lg:p-0">
         <div
           className="relative bg-white rounded-lg max-w-[670px]"
           onClick={e => e.stopPropagation()}

@@ -13,7 +13,7 @@ const About = () => {
     <section className="max-h-screen flex flex-col bg-paper-texture" id="about">
       <div className="h-full w-full max-w-[1100px] mx-auto">
         {/* Mobile */}
-        <div className="block md:hidden">
+        <div className="block lg:hidden">
           <Swiper
             modules={[Pagination]}
             slidesPerView={1}
@@ -34,7 +34,7 @@ const About = () => {
           </Swiper>
         </div>
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <div className="w-full flex flex-col items-center text-center">
             <GreatTitle title="Sobre Nós" />
             <h1 className="font-extrabold tracking-[-0.08em] text-4xl my-3 uppercase">
@@ -66,7 +66,7 @@ const About = () => {
         </div>
 
         {/* Desktop */}
-        <div className="hidden md:flex justify-between">
+        <div className="hidden lg:flex justify-between">
           {cardsMock.map(card => (
             <Cards
               key={card.text}
@@ -77,7 +77,7 @@ const About = () => {
           ))}
         </div>
 
-        <div className="hidden md:flex justify-between items-center -mb-[45px]">
+        <div className="hidden lg:flex justify-between items-center -mb-[45px]">
           <div className="max-w-[700px]">
             <GreatTitle title="Sobre Nós" />
             <h1 className="font-extrabold w-[80%] tracking-[-0.08em] text-5xl my-3 uppercase">

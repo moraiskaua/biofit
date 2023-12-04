@@ -28,13 +28,13 @@ const Categories = () => {
   };
 
   return (
-    <section className="mb-11 p-2.5 md:p-0">
-      <div className="w-full max-w-[1100px] bg-white mx-auto mt-24 flex flex-col items-center p-5 md:p-8 shadow-2xl">
+    <section className="mb-11 p-2.5 lg:p-0">
+      <div className="w-full max-w-[1100px] bg-white mx-auto mt-24 flex flex-col items-center p-5 lg:p-8 shadow-2xl">
         <GreatTitle title="Nossas turmas" />
-        <h1 className="hidden md:block font-extrabold tracking-[-0.08em] text-5xl my-5 uppercase">
+        <h1 className="hidden lg:block font-extrabold tracking-[-0.08em] text-5xl my-5 uppercase">
           Oferecemos as melhores aulas pra você
         </h1>
-        <div className="grid md:grid-cols-3 md:grid-rows-2 gap-6 my-5">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 gap-6 my-5">
           {categoriesMock.map(category => (
             <div
               className="flex flex-col items-center relative cursor-pointer overflow-hidden rounded-lg shadow-md"

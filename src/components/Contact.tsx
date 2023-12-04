@@ -24,7 +24,7 @@ const Contact = () => {
         className="w-full max-w-[1100px] mx-auto bg-[#171717] flex"
         onSubmit={handleSubmit}
       >
-        <div className="flex flex-col gap-6 w-full md:w-1/2 p-9 text-white">
+        <div className="flex flex-col gap-6 w-full lg:w-1/2 p-9 text-white">
           <h1 className="font-bold text-center text-3xl uppercase">
             Entre em contato
           </h1>
@@ -77,7 +77,7 @@ const Contact = () => {
             Enviar
           </button>
         </div>
-        <div className="hidden md:w-1/2 bg-form-ad bg-cover bg-center md:flex justify-center items-end">
+        <div className="hidden lg:w-1/2 bg-form-ad bg-cover bg-center lg:flex justify-center items-end">
           <div className="flex gap-5 py-4 text-white mb-5">
             <FaWhatsapp
               size={40}

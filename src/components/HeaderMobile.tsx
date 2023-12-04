@@ -23,7 +23,7 @@ const HeaderMobile = ({ isScrolled }: HeaderProps) => {
     <nav
       className={`${
         isScrolled ? 'bg-dark-gray' : 'bg-transparent'
-      } flex items-center justify-between w-full fixed px-4 sm:px-8 md:px-16 z-20 transition-all duration-500 ease-in`}
+      } flex items-center justify-between w-full fixed px-4 sm:px-8 lg:px-16 z-20 transition-all duration-500 ease-in`}
     >
       <Link href="#home">
         <Image src={logo} width={180} height={120} alt="Logo" />

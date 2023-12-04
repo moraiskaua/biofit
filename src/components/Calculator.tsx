@@ -50,7 +50,7 @@ const Calculator = () => {
         <Image
           src={modeloImc}
           alt="Modelo IMC"
-          width={540}
+          width={480}
           className="-mb-[45px]"
         />
         <div className="h-full w-full flex flex-col justify-center items-center md:items-start">
