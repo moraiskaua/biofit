@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Hamburger from 'hamburger-react';
 import logo from '../../public/assets/images/logo-biofit.png';
 
@@ -13,10 +13,6 @@ const HeaderMobile = ({ isScrolled }: HeaderProps) => {
 
   const handleToggleIsOpen = () => {
     setIsOpen(!isOpen);
-  };
-
-  const closeSideBar = () => {
-    setIsOpen(false);
   };
 
   return (
@@ -36,18 +32,10 @@ const HeaderMobile = ({ isScrolled }: HeaderProps) => {
       {isOpen && (
         <div className="fixed top-0 right-0 h-full bg-dark-gray p-8">
           <ul className="flex flex-col items-center mt-8 text-white gap-2">
-            <Link href="#about" passHref>
-              Sobre Nós
-            </Link>
-            <Link href="#categories" passHref>
-              Turmas
-            </Link>
-            <Link href="#calculator" passHref>
-              Calculadora
-            </Link>
-            <Link href="#contact" passHref>
-              Contato
-            </Link>
+            <Link href="#about">Sobre Nós</Link>
+            <Link href="#categories">Turmas</Link>
+            <Link href="#calculator">Calculadora</Link>
+            <Link href="#contact">Contato</Link>
           </ul>
         </div>
       )}
