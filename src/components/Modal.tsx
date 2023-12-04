@@ -19,12 +19,12 @@ const Modal = ({ onClose, category }: ModalProps) => {
 
   return (
     <div
-      className="fixed inset-0 z-20 overflow-y-auto bg-black bg-opacity-75"
+      className="fixed inset-0 z-20 overflow-y-auto overflow-x-hidden bg-black bg-opacity-75"
       onClick={onClose}
     >
-      <div className="flex items-center justify-center min-h-screen">
+      <div className="flex items-center justify-center min-h-screen p-3.5 md:p-0">
         <div
-          className="relative bg-white rounded-lg w-[670px]"
+          className="relative bg-white rounded-lg max-w-[670px]"
           onClick={e => e.stopPropagation()}
         >
           <div
@@ -33,7 +33,7 @@ const Modal = ({ onClose, category }: ModalProps) => {
           >
             <Close size={45} fill="white" />
           </div>
-          <div className="relative ">
+          <div className="relative">
             <img
               src={category.image}
               alt="Imagem"
