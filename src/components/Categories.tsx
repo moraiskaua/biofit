@@ -29,7 +29,7 @@ const Categories = () => {
 
   return (
     <section className="mb-11 p-2.5 lg:p-0">
-      <div className="w-full max-w-[1100px] bg-white mx-auto mt-24 flex flex-col items-center p-5 lg:p-8 shadow-2xl">
+      <div className="w-full max-w-[1100px] bg-white mx-auto mt-4 flex flex-col items-center p-5 lg:p-8 shadow-2xl relative">
         <GreatTitle title="Nossas turmas" />
         <h1 className="hidden lg:block font-extrabold tracking-[-0.08em] text-5xl my-5 uppercase">
           Oferecemos as melhores aulas pra você

@@ -82,7 +82,7 @@ const Footer = () => {
         <h4 className="uppercase text-white relative before:content-[''] before:absolute before:border-b-orange before:border-b-4 before:w-20 before:left-0 before:-bottom-1 font-bold">
           Nossas Turmas
         </h4>
-        <nav className="flex flex-col mt-9 gap-2 w-[20%]">
+        <nav className="flex flex-col items-center md:items-start mt-9 gap-2 w-[20%]">
           <Link
             href="#categories"
             className="hover:text-white transition-colors"
@@ -144,14 +144,14 @@ const Footer = () => {
           <h4 className="uppercase text-white relative before:content-[''] before:absolute before:border-b-orange before:border-b-4 before:w-28 before:left-0 before:-bottom-1 font-bold mb-4">
             Localização
           </h4>
-          <span className="text-left">
+          <span className="text-center md:text-left">
             St. J Norte QNJ 52 - Taguatinga, Brasília - DF, 72140-520
           </span>
           <button
             onClick={() =>
               window.open('https://maps.app.goo.gl/48H1biufF629U9aB6', '_blank')
             }
-            className="ml-4 border mt-2 py-2 px-4 border-white/50 hover:scale-105 transition-all duration-700"
+            className="border mt-2 py-2 px-4 border-white/50 hover:scale-105 transition-all duration-700"
           >
             Ver localização
           </button>

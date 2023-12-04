@@ -45,29 +45,32 @@ const Calculator = () => {
   };
 
   return (
-    <section className="flex bg-paper-texture" id="calculator">
-      <div className="w-full max-w-[1100px] h-[577px] flex flex-col-reverse md:flex-row md:justify-between md:items-end md:mx-auto">
+    <section className="flex bg-paper-texture h-[700px] -mt-32" id="calculator">
+      <div className="w-full max-w-[1200px] h-[700px] flex flex-col-reverse md:flex-row md:justify-between md:items-end md:mx-auto">
         <Image
           src={modeloImc}
           alt="Modelo IMC"
-          width={480}
-          className="-mb-[45px] md:w-full"
+          width={370}
+          className="-mb-[40px] mx-auto w-[80%] md:mx-0 md:-mb-[50px] md:w-[80%]"
         />
-        <div className="h-full w-full flex flex-col justify-center items-center md:items-start">
+        <div className="h-full w-full flex flex-col justify-center items-center md:items-start -mb-24 md:-mb-12">
           <GreatTitle title="Calculadora" />
           <h1 className="font-extrabold tracking-[-0.08em] text-3xl md:text-5xl my-2 md:my-3 uppercase">
             VAMOS MEDIR SEU ÍNDICE <br /> DE{' '}
             <span className="text-orange">MASSA CORPORAL</span>
           </h1>
-          <p className="text-sm md:text-base w-[80%] mb-3">
+          <p className="text-sm md:text-base w-[95%] mb-5">
             O IMC, ou Índice de Massa Corporal, relaciona peso e altura.
             Calculado como peso dividido pela altura ao quadrado, categoriza em
             faixas como abaixo do peso, peso normal, sobrepeso e obesidade.
           </p>
 
-          <form onSubmit={handleCalculateIMC}>
-            <div className="flex gap-4">
-              <div className="flex flex-col w-full">
+          <form
+            className="flex flex-col w-full justify-center"
+            onSubmit={handleCalculateIMC}
+          >
+            <div className="flex gap-4 md:w-[92.5%] justify-center">
+              <div className="flex flex-col w-[45%] md:w-full">
                 <input
                   className="p-2 border border-black outline-none"
                   type="number"
@@ -80,7 +83,7 @@ const Calculator = () => {
                   Seu IMC é: <span className="font-normal">{imc}</span>
                 </div>
               </div>
-              <div className="flex flex-col w-full">
+              <div className="flex flex-col w-[45%] md:w-full">
                 <input
                   className="p-2 border border-black outline-none"
                   type="number"
@@ -95,7 +98,7 @@ const Calculator = () => {
               </div>
             </div>
             <button
-              className="w-full py-3 border border-black bg-orange my-4 text-white"
+              className="w-[94.5%] md:w-[92.6%] mx-auto md:mx-0 mt-8 py-3 border border-black bg-orange my-4 text-white"
               type="submit"
             >
               Calcular
