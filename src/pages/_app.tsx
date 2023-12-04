@@ -6,6 +6,13 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
+import { register } from 'swiper/element-bundle';
+import 'swiper/swiper-bundle.css';
+import 'swiper/css/pagination';
+import 'swiper/css';
+
+register();
+
 export default function App({ Component, pageProps }: AppProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });

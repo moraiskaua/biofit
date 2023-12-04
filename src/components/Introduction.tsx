@@ -25,6 +25,45 @@ const Introduction = () => {
         </div>
       </div>
 
+      {/* Mobile */}
+      <div className="flex md:hidden gap-x-4 absolute text-white bottom-36">
+        <FaInstagram
+          size={28}
+          className="hover:scale-125 cursor-pointer transition-all"
+          onClick={() =>
+            window.open('https://www.instagram.com/biofitqnj/', '_blank')
+          }
+        />
+        <FaYoutube
+          size={28}
+          className="hover:scale-125 cursor-pointer transition-all"
+          onClick={() =>
+            window.open(
+              'https://www.youtube.com/@fitbrothersoficial6096',
+              '_blank',
+            )
+          }
+        />
+        <FaFacebook
+          size={28}
+          className="hover:scale-125 cursor-pointer transition-all"
+          onClick={() =>
+            window.open('https://www.facebook.com/biofitqnj', '_blank')
+          }
+        />
+        <FaWhatsapp
+          size={28}
+          className="hover:scale-125 cursor-pointer transition-all"
+          onClick={() =>
+            window.open(
+              `https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}`,
+              '_blank',
+            )
+          }
+        />
+      </div>
+
+      {/* Desktop */}
       <div className="hidden md:flex flex-row-reverse items-center gap-x-4 absolute text-white -rotate-90 -right-8 font-bold">
         CONECTE-SE
         <FaInstagram
@@ -54,42 +93,6 @@ const Introduction = () => {
         <FaWhatsapp
           size={28}
           className="rotate-90 hover:scale-125 cursor-pointer transition-all"
-          onClick={() =>
-            window.open(
-              `https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}`,
-              '_blank',
-            )
-          }
-        />
-      </div>
-      <div className="flex md:hidden gap-x-4 absolute text-white bottom-36">
-        <FaInstagram
-          size={28}
-          className="hover:scale-125 cursor-pointer transition-all"
-          onClick={() =>
-            window.open('https://www.instagram.com/biofitqnj/', '_blank')
-          }
-        />
-        <FaYoutube
-          size={28}
-          className="hover:scale-125 cursor-pointer transition-all"
-          onClick={() =>
-            window.open(
-              'https://www.youtube.com/@fitbrothersoficial6096',
-              '_blank',
-            )
-          }
-        />
-        <FaFacebook
-          size={28}
-          className="hover:scale-125 cursor-pointer transition-all"
-          onClick={() =>
-            window.open('https://www.facebook.com/biofitqnj', '_blank')
-          }
-        />
-        <FaWhatsapp
-          size={28}
-          className="hover:scale-125 cursor-pointer transition-all"
           onClick={() =>
             window.open(
               `https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER}`,
